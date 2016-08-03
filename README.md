@@ -38,20 +38,20 @@ Node.js runtime.
 
 # Difference from client-side fetch
 
-- See [Known Differences](https://github.com/bitinn/node-fetch/blob/master/LIMITS.md) for details.
+- See [Known Differences](https://github.com/gwicke/node-fetch-polyfill/blob/master/LIMITS.md) for details.
 - If you happen to use a missing feature that `window.fetch` offers, feel free to open an issue.
 - Pull requests are welcomed too!
 
 
 # Install
 
-`npm install node-fetch --save`
+`npm install node-fetch-polyfill --save`
 
 
 # Usage
 
 ```javascript
-var fetch = require('node-fetch');
+var fetch = require('node-fetch-polyfill');
 
 // If you are not on node v0.12, set a Promise library first, eg.
 // fetch.Promise = require('bluebird');
@@ -139,7 +139,7 @@ co(function *() {
 });
 ```
 
-See [test cases](https://github.com/bitinn/node-fetch/blob/master/test/test.js) for more examples.
+See [test cases](https://github.com/gwicke/node-fetch-polyfill/blob/master/test/test.js) for more examples.
 
 
 # API
@@ -181,9 +181,9 @@ MIT
 Thanks to [github/fetch](https://github.com/github/fetch) for providing a solid implementation reference.
 
 
-[npm-image]: https://img.shields.io/npm/v/node-fetch.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/node-fetch
-[travis-image]: https://img.shields.io/travis/bitinn/node-fetch.svg?style=flat-square
-[travis-url]: https://travis-ci.org/bitinn/node-fetch
-[coveralls-image]: https://img.shields.io/coveralls/bitinn/node-fetch.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/bitinn/node-fetch
+[npm-image]: https://img.shields.io/npm/v/node-fetch-polyfill.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/node-fetch-polyfill
+[travis-image]: https://img.shields.io/travis/gwicke/node-fetch-polyfill.svg?style=flat-square
+[travis-url]: https://travis-ci.org/gwicke/node-fetch-polyfill
+[coveralls-image]: https://img.shields.io/coveralls/gwicke/node-fetch-polyfill.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/gwicke/node-fetch-polyfill
