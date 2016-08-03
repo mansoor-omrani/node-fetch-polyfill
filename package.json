@@ -1,7 +1,7 @@
 {
-  "name": "node-fetch",
-  "version": "1.5.3",
-  "description": "A light-weight module that brings window.fetch to node.js and io.js",
+  "name": "node-fetch-polyfill",
+  "version": "2.0.0",
+  "description": "A light-weight module that brings window.fetch to node.js",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitinn/node-fetch.git"
+    "url": "https://github.com/gwicke/node-fetch-polyfill.git"
   },
   "keywords": [
     "fetch",
@@ -18,11 +18,12 @@
     "promise"
   ],
   "author": "David Frank",
+  "contributors": ["Gabriel Wicke <gwicke@wikimedia.org>"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bitinn/node-fetch/issues"
+    "url": "https://github.com/gwicke/node-fetch-polyfill/issues"
   },
-  "homepage": "https://github.com/bitinn/node-fetch",
+  "homepage": "https://github.com/gwicke/node-fetch-polyfill",
   "devDependencies": {
     "bluebird": "^3.3.4",
     "chai": "^3.5.0",
