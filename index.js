@@ -178,9 +178,6 @@ function fetch(url, opts) {
                 }
             }
 
-            // Convert to ReadableStream
-            body = webStreams.toWebReadableStream(body);
-
             // normalize location header for manual redirect mode
             if (request.redirect === 'manual' && headers.has('location')) {
                 headers.set('location', resolve_url(request.url, headers.get('location')));
