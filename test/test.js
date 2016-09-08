@@ -1284,7 +1284,7 @@ describe('node-fetch', function() {
 		expect(cl.follow).to.equal(3);
 		expect(cl.compress).to.equal(false);
 		expect(cl.method).to.equal('POST');
-		expect(cl.counter).to.equal(3);
+		expect(cl.counter).to.equal(0);
 		expect(cl.agent).to.equal(agent);
 		// clone body shouldn't be the same body
 		expect(cl.body).to.not.equal(body);
