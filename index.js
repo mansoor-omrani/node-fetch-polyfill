@@ -93,6 +93,7 @@ function fetch(url, opts) {
             // detect form data input from form-data module, this hack avoid the need to add content-length header manually
             } else if (request._rawBody
                     && typeof request._rawBody.getLengthSync === 'function'
+                    && request._rawBody._lengthRetrievers
                     && request._rawBody._lengthRetrievers.length === 0) {
                 headers.set('content-length', request._rawBody.getLengthSync().toString());
             // this is only necessary for older nodejs releases (before iojs merge)
